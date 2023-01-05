@@ -1,4 +1,3 @@
-import java.util.Queue;
 import java.util.Scanner;
 import java.util.Vector;
 
@@ -42,6 +41,9 @@ public class Main {
         String flavour = "";
         String addOns = "";
         String toastSize = "";
+        float addOnsPrice = 0;
+        float flavorPrice = 0;
+        float hargaUkuran = 0;
         int quantity = 0;
 
         // FLAVOUR
@@ -79,30 +81,54 @@ public class Main {
             } catch (Exception e){}
         } while (quantity < 1);
 
-        hitungHarga();
+        // HARGA ADDONS
+        if (addOns.equals("None")){
+            addOnsPrice = 0;
+        }if (addOns.equals("Butter")){
+            addOnsPrice = 2000;
+        }if (addOns.equals("Sprinkles")){
+            addOnsPrice = 5000;
+        }
+
+        // HARGO FLAVOR
+        if (flavour.equals("Plain")){
+            flavorPrice = 10000;
+        }if (flavour.equals("Chocolate")){
+            flavorPrice = 15000;
+        }if (flavour.equals("Cheese")){
+            flavorPrice = 15000;
+        }
+
+        // HARGA TOAST SIZE
+        if (toastSize.equalsIgnoreCase("Large")){
+            hargaUkuran = (flavorPrice + addOnsPrice) * quantity;
+        } if (toastSize.equalsIgnoreCase("Large")){
+            hargaUkuran = (flavorPrice + addOnsPrice) * quantity * 1.5f;
+        }
 
         // add to VECTOR
         FLAVOURS.add(flavour);
         ADDONS.add(addOns);
         TOASTSIZE.add(toastSize);
         QUANTITY.add(quantity);
+        TOTALPRICE.add(hargaUkuran);
 
         System.out.println("");
         System.out.println("Added order succesfully! \n");
     }
-    void hitungHarga(){
-        float totalPrice = 0;
-        float flavorPrice = 0;
-        float addOnsPrice = 0;
-        int quantity = 0;
-        String toastSize = "";
-        if (toastSize.equalsIgnoreCase("Regular")){
-            totalPrice = (flavorPrice + addOnsPrice) * quantity;
-        } else if (toastSize.equalsIgnoreCase("Large")) {
-            totalPrice = (float) ((flavorPrice + addOnsPrice) * quantity * 1.5);
-        }
-        TOTALPRICE.add(totalPrice);
-    }
+//    void hitungHarga(){
+//        float totalPrice = 0;
+//        float flavorPrice = 0;
+//        float addOnsPrice = 0;
+//        int quantity = 0;
+//        String toastSize = "";
+//        if (toastSize.equalsIgnoreCase("Regular")){
+//            totalPrice = (flavorPrice + addOnsPrice) * quantity;
+//        } else if (toastSize.equalsIgnoreCase("Large")) {
+//            totalPrice = ((flavorPrice + addOnsPrice) * quantity * 1.5f);
+//        }
+//        TOTALPRICE.add(totalPrice);
+//    }
     void viewOrders(){
         for (int i = 0; i < FLAVOURS.size(); i++){
             System.out.println("Name : " + FLAVOURS.get(i));
