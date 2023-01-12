@@ -128,7 +128,20 @@ public class trial {
         }
     }
     private static void removeCandidate(){
-
+        viewCandidate();
+        int select;
+        do {
+            System.out.print("Select Data to Delete : " + NAMES.size());
+            select = scan.nextInt();
+        } while (select > NAMES.size() || select < 0);
+        if (select ==0) {
+            menu_1();
+        } else {
+            NAMES.remove(select -1);
+            GENDER.remove(select -1);
+            AGE.remove(select -1);
+            ADRESS.remove(select -1);
+        }
     }
 
     // PRINTLN PRINTLN PRINTLN PRINTLN PRINTLN PRINTLN PRINTLN PRINTLN PRINTLN PRINTLN PRINTLN PRINTLN
