@@ -39,5 +39,33 @@ kondisi tertentu. Selection pada umumnya menggunakan perintah seperti:
             2. Kode yang lebih kompleks sulit diterapkan: Struktur switch-case
                tidak cocok untuk kondisi yang sangat kompleks dan membutuhkan pemilihan yang
                lebih banyak dibandingkan dua pilihan.*/
+        System.out.println("Contoh If-else");
+        System.out.println("==============");
+        int score = 75;
+        if (score >= 90) {
+            System.out.println("Excellent");
+        } else if (score >= 75) {
+            System.out.println("Good");
+        } else {
+            System.out.println("Needs Improvement");
+        }
+
+        System.out.println("\nContoh Switch-case");
+        System.out.println("====================");
+        int day = 3;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            default:
+                System.out.println("Invalid day");
+                break;
+        }
     }
 }
