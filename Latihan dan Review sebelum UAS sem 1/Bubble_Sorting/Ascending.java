@@ -18,7 +18,7 @@ public class Ascending {
             System.out.println(numbers[i]);
         }
         System.out.println("");
-        System.out.println("NUMBERS SORT ASCENDING");
+        System.out.println("ALPHABET SORT ASCENDING");
         String[] name = {"Batara Wisnu", "Batara Indra", "Anjani", "Werkudara", "Drona"};
         for (int i = 0; i < name.length - 1; i++) {
             for (int j = i + 1; j < name.length; j++) {
