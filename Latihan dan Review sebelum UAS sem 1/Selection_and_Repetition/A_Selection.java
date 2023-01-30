@@ -12,7 +12,7 @@ kondisi tertentu. Selection pada umumnya menggunakan perintah seperti:
       adalah struktur kontrol pemilihan dalam pemrograman yang memungkinkan pengambilan keputusan 
       berdasarkan kondisi yang diberikan. Jika kondisi yang diberikan bernilai benar (true), maka 
       blok kode yang terkait dengan bagian if akan dieksekusi, jika tidak, maka blok kode yang 
-      terkait dengan bagian else akan dieksekusi. Struktur if-else 
+      terkait dengan bagian else akan dieksekusi. 
       
         Kelebihan:
             1. Fleksibilitas: if-else memungkinkan kita untuk menentukan
@@ -27,6 +27,8 @@ kondisi tertentu. Selection pada umumnya menggunakan perintah seperti:
                kompleks, maka penulisan kode dapat menjadi sangat panjang dan sulit dibaca.
 
    b. Switch-case
+      adalah struktur kontrol pemilihan dalam pemrograman yang memungkinkan pengambilan keputusan 
+      berdasarkan banyak pilihan yang diberikan.
         Kelebihan:
             1. Lebih efisien: Dalam beberapa kasus, switch-case dapat menjalankan
                 kode lebih cepat dibandingkan if-else.
