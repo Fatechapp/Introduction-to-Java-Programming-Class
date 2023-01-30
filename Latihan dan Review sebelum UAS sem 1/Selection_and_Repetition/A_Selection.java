@@ -9,6 +9,11 @@ pemrograman dasar yang digunakan untuk membuat logika aplikasi.
 kondisi tertentu. Selection pada umumnya menggunakan perintah seperti:
 
    a. If-else
+      adalah struktur kontrol pemilihan dalam pemrograman yang memungkinkan pengambilan keputusan 
+      berdasarkan kondisi yang diberikan. Jika kondisi yang diberikan bernilai benar (true), maka 
+      blok kode yang terkait dengan bagian if akan dieksekusi, jika tidak, maka blok kode yang 
+      terkait dengan bagian else akan dieksekusi. Struktur if-else 
+      
         Kelebihan:
             1. Fleksibilitas: if-else memungkinkan kita untuk menentukan
                kondisi yang lebih kompleks dan memiliki lebih dari dua pilihan.
