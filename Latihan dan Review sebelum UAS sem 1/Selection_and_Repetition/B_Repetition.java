@@ -56,5 +56,39 @@ pemrograman dasar yang digunakan untuk membuat logika aplikasi.
             1. Dapat mengakibatkan overflow memori jika pengulangan terlalu dalam atau
                tidak diterminasi dengan benar, dan lebih sulit untuk dipahami dan
                diimplementasikan dibandingkan dengan looping lain.*/
+        System.out.println("Contoh for loop");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+
+        System.out.println("Contoh while loop");
+        int j = 1;
+        while (j <= 10) {
+            System.out.println(j);
+            j++;
+        }
+
+        System.out.println("Contoh do-while loop");
+        int k = 1;
+        do {
+            System.out.println(k);
+            k++;
+        } while (k <= 10);
+
+        System.out.println("Contoh for-each loop");
+        int[] numbers = {1, 2, 3, 4, 5};
+        for (int number : numbers) {
+            System.out.println(number);
+        }
+        printNumbers(5);
     }
+    // CONTOH RECURSIVE LOOP
+    public static void printNumbers(int n) {
+        if (n <= 0) {
+            return;
+        }
+        System.out.println(n);
+        printNumbers(n - 1);
+    }
+
 }
