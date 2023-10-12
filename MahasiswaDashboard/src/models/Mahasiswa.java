@@ -1,16 +1,19 @@
 package models;
 
 public class Mahasiswa {
+    // Mendefinisikan atribut mahasiswa
     private String NIM;
     private String nama;
     private int tahunLahir;
 
+    // Construction class
     public Mahasiswa(String NIM, String nama, int tahunLahir) {
         this.NIM = NIM;
         this.nama = nama;
         this.tahunLahir = tahunLahir;
     }
 
+    // Setter dan Getter
     public String getNIM() {
         return NIM;
     }
@@ -34,6 +37,8 @@ public class Mahasiswa {
     public void setTahunLahir(int tahunLahir) {
         this.tahunLahir = tahunLahir;
     }
+
+    // Override method toString
     @Override
     public String toString() {
         return "NIM: " + NIM + ", Nama: " + nama + ", Usia: " + tahunLahir;
